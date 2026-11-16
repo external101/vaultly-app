@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaultly - Content Scheduling & Publishing</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; color: #1a1a2e; background: #ffffff; line-height: 1.6; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 16px; }
+
+        header { padding: 20px 0; border-bottom: 1px solid #ede9fe; }
+        .header-inner { display: flex; align-items: center; justify-content: space-between; }
+        .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+        .logo-icon { width: 36px; height: 36px; background: linear-gradient(135deg, #7c3aed, #a78bfa); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 18px; }
+        .logo-text { font-size: 22px; font-weight: 700; color: #1a1a2e; }
+        nav a { margin-left: 28px; text-decoration: none; color: #64748b; font-weight: 500; font-size: 15px; }
+        nav a:hover { color: #7c3aed; }
+
+        .hero { padding: 80px 0 60px; text-align: center; }
+        .hero h1 { font-size: 48px; font-weight: 700; line-height: 1.15; margin-bottom: 20px; color: #0f172a; }
+        .hero h1 span { color: #7c3aed; }
+        .hero p { font-size: 19px; color: #64748b; max-width: 600px; margin: 0 auto 36px; }
+        .cta-btn { display: inline-block; padding: 14px 36px; background: linear-gradient(135deg, #7c3aed, #a78bfa); color: white; text-decoration: none; border-radius: 12px; font-weight: 600; font-size: 16px; transition: transform 0.2s; }
+        .cta-btn:hover { transform: translateY(-2px); }
+
+        .features { padding: 60px 0; }
+        .features h2 { text-align: center; font-size: 34px; font-weight: 700; margin-bottom: 48px; }
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 28px; }
+        .feature-card { padding: 32px; border-radius: 16px; border: 1px solid #ede9fe; background: #faf5ff; transition: box-shadow 0.2s; }
+        .feature-card:hover { box-shadow: 0 8px 24px rgba(124, 58, 237, 0.1); }
+        .feature-icon { width: 48px; height: 48px; background: linear-gradient(135deg, #7c3aed, #a78bfa); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 18px; font-size: 22px; }
+        .feature-card h3 { font-size: 19px; font-weight: 600; margin-bottom: 10px; }
+        .feature-card p { color: #64748b; font-size: 15px; }
+
+        .how-it-works { padding: 60px 0; background: #f5f3ff; border-radius: 24px; margin: 40px 0; }
+        .how-it-works h2 { text-align: center; font-size: 34px; font-weight: 700; margin-bottom: 48px; }
+        .steps { display: flex; justify-content: center; gap: 48px; flex-wrap: wrap; padding: 0 16px; }
+        .step { text-align: center; max-width: 260px; }
+        .step-num { width: 48px; height: 48px; background: #7c3aed; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 20px; margin: 0 auto 16px; }
+        .step h3 { font-size: 18px; font-weight: 600; margin-bottom: 8px; }
+        .step p { color: #64748b; font-size: 14px; }
+
+        footer { padding: 40px 0; border-top: 1px solid #ede9fe; margin-top: 60px; text-align: center; }
+        footer a { color: #64748b; text-decoration: none; margin: 0 16px; font-size: 14px; }
+        footer a:hover { color: #7c3aed; }
+        .footer-copy { color: #94a3b8; font-size: 13px; margin-top: 16px; }
+
+        @media (max-width: 768px) { .hero h1 { font-size: 32px; } nav { display: none; } .steps { gap: 32px; } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-inner">
+            <a href="/" class="logo">
+                <div class="logo-icon">V</div>
+                <span class="logo-text">Vaultly</span>
+            </a>
+            <nav>
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How It Works</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Schedule and publish <span>smarter content</span></h1>
+            <p>Vaultly helps you plan, schedule, and track your TikTok content strategy. Connect your account, see what's performing, and build a content calendar that works.</p>
+            <a href="#" class="cta-btn">Start Planning</a>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="container">
+            <h2>Everything You Need to Plan Content</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📆</div>
+                    <h3>Content Calendar</h3>
+                    <p>Plan your posting schedule with a visual calendar. Drag and drop to rearrange, set reminders, and never miss a posting window.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👤</div>
+                    <h3>Profile Overview</h3>
+                    <p>See your complete TikTok profile at a glance — bio, follower count, engagement rate, and recent posting frequency.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Best Time to Post</h3>
+                    <p>We analyze your audience activity and video performance to suggest the optimal times to publish new content.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📋</div>
+                    <h3>Content Library</h3>
+                    <p>Browse all your published TikTok videos in one place. Filter by performance, date, or engagement metrics.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Performance Insights</h3>
+                    <p>Track views, likes, shares, and comments across all your videos. Understand what content resonates with your audience.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Content Recycling</h3>
+                    <p>Identify your top-performing videos and get suggestions for similar content ideas to keep your audience engaged.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-num">1</div>
+                    <h3>Connect TikTok</h3>
+                    <p>Sign in securely with your TikTok account using TikTok's official Login Kit.</p>
+                </div>
+                <div class="step">
+                    <div class="step-num">2</div>
+                    <h3>Review Your Content</h3>
+                    <p>We load your videos, stats, and profile data so you can see everything in one dashboard.</p>
+                </div>
+                <div class="step">
+                    <div class="step-num">3</div>
+                    <h3>Plan & Publish</h3>
+                    <p>Use insights to plan your content calendar and publish at the best times for engagement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div>
+                <a href="terms.html">Terms of Service</a>
+                <a href="privacy.html">Privacy Policy</a>
+            </div>
+            <p class="footer-copy">&copy; 2026 Vaultly. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
